@@ -1,0 +1,1283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/*--------------------INDEX-----------------------*/
+
+/*----------------Encabezado------------------*/
+
+.contenedor-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:3fr;
+    grid-template-areas:
+        "encabezado"
+        "main"
+        "footer";
+}
+
+.seccion-encabezado{
+    grid-area:encabezado;
+    background-color:black;
+    height:140px;
+    width:100%;
+    position:sticky;
+    top:0;
+    z-index: 1;
+}
+
+.navegador{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+
+    height:130px;
+
+}
+
+.logo a img{
+    width:auto;
+    height:120px;
+    position:relative;
+    top:10px;
+    
+}
+.navegador-lista {
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+    align-items: center;
+   
+    
+    
+}
+
+.navegador-lista li{
+    text-decoration: none;
+    margin-right:25px;
+    
+}
+
+.navegador-lista li a{
+    text-decoration: none;
+    list-style: none;
+    color:white;
+    font-size:17px;
+}
+
+.navegador-lista li a:hover{
+    transition:1.5s;
+    color:gray;
+}
+
+.main{
+    grid-area:main;
+}
+
+/*----------------Primera sección------------------*/
+
+.primera-seccion{
+    background:linear-gradient(rgba(0,0,0,0.250), rgba(0,0,0,0.250)), url('./Imagenes/imagen_index_1.jpg');
+    background-size:cover;
+    background-position:center ;
+    background-attachment:fixed ;
+    background-repeat: no-repeat;
+    height:80vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+}   
+
+.primera-seccion h1{
+    color:white;
+    text-shadow: #0F4C75 1px 3px;
+    font-size:60px;
+
+    
+}
+/*----------------Segunda sección------------------*/
+
+.segunda-seccion{
+    background-color: black;
+    width:100%;
+}
+
+.segunda-seccion h2{
+    color:white;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    font-size:40px;
+    text-transform: uppercase;
+    padding:10px 0px;
+}
+
+.contenedor-productos{
+    background-color:#1B262C;
+    width:100%;
+    padding-top:45px;
+    padding-bottom:45px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto-1{
+    background: url('./Imagenes/imagen_index_2.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height:600px;
+    width:95%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:45px;
+    text-align: center;
+}
+
+.producto-1 h3{
+    color:white;
+    text-shadow: #0F4C75 1px 3px;
+    font-size:60px;
+    
+}
+
+.producto-2{
+    background: url('./Imagenes/imagen_index_3.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height:600px;
+    width:95%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:45px;
+    text-align: center;
+}
+
+.producto-2 h3{
+    color:white;
+    text-shadow: #0F4C75 1px 3px;
+    font-size:60px;
+}
+.producto-3{
+    background: url('./Imagenes/imagen_index_4.JPG');
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height:600px;
+    width:95%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.producto-3 h3{
+    color:white;
+    text-shadow: #0F4C75 1px 3px;
+    font-size:60px;
+}
+
+
+
+/*--------------------Footer-----------------------*/
+
+.seccion-footer{
+    grid-area:footer;
+    background-color: black;
+    width:100%;
+    height:200px;
+   
+}
+
+
+
+
+.enlaces-footer{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:40px 130px 20px;
+    grid-template-areas: 
+        "logo titulo-menu redes-sociales"
+        "logo menu redes-sociales"
+        "copyright copyright copyright";
+}
+
+.logo-footer{
+    grid-area:logo;
+    display:flex;
+    align-items: center;
+    position:relative;
+    top:20px;
+}
+
+.logo-footer a img{
+    width:auto;
+    height:120px;
+   
+}
+
+.titulo-menu{
+    grid-area:titulo-menu;
+    color:white;
+    text-transform: uppercase;
+    font-size:20px;
+    display:flex;
+    justify-content: center;
+    align-items:end;
+}
+.navegador-footer-lista {
+    grid-area:menu;
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.navegador-footer-lista li{
+    text-decoration: none;
+    display:flex;
+    padding-bottom:3px;
+    
+}
+
+.navegador-footer-lista li a{
+    text-decoration: none;
+    list-style: none;
+    color:white;
+    font-size:17px;
+    
+}
+
+.navegador-footer-lista li a:hover{
+    transition:1.5s;
+    color:gray;
+}
+
+
+.redes-sociales{
+    grid-area:redes-sociales;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    top:20px;
+}
+.redes-sociales img{
+    width:80px;
+    height:55px;
+    padding-left:25px;
+ 
+}
+
+.redes-sociales img:hover{
+    transition: 1.5s;
+    transform: scale(1.10);
+}
+
+.copyright{
+    grid-area:copyright;
+    display:flex;
+    justify-content: center;
+    text-align:center;
+}
+
+.copyright p{
+    color:white;
+    font-size:15px;
+    font-family: sans-serif;
+    
+    
+    
+}
+
+/*--------------------NOSOTROS-----------------------*/
+
+/*----------------Primera-seccion------------------*/
+
+.primera-seccion-nosotros{
+    background-color: #1B262C;
+    width:100%;
+}
+
+.contenedor-nosotros-uno{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    padding-top:50px;
+}
+.informacion-uno{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.informacion-uno h1{
+    color:white;
+    font-size:35px;
+    position:relative;
+    bottom:20px;
+
+}
+
+.informacion-uno p{
+    color:white;
+    text-align: justify;
+    font-size:20px;
+}
+
+
+
+.imagen-uno img{
+    height: 330px;
+    width:500px;
+
+}
+
+.imagen-uno img:hover{
+    transition:1.5s;
+    transform:scale(1.10);
+}
+
+.contenedor-nosotros-dos{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.informacion-dos{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+}
+
+.informacion-dos h1{
+    color:white;
+    font-size:35px;
+    position:relative;
+    bottom:20px;
+    text-align: right;
+}
+
+.informacion-dos p{
+    color:white;
+    text-align: justify;
+    font-size:20px;
+    
+}
+
+.imagen-dos img{
+    height: 330px;
+    width:500px;
+
+}
+
+.imagen-dos img:hover{
+    transition:1.5s;
+    transform:scale(1.10);
+}
+
+/*----------------Segunda-seccion------------------*/
+
+.segunda-seccion-nosotros{
+    background-color: #112B3C;
+    width:100%;
+}
+.titulo-ubicacion{
+    background-color: black;
+    text-align:center;
+    text-transform: uppercase;
+    padding:10px 0px;
+}
+
+.titulo-ubicacion h2{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size:40px;
+}
+
+.ubicacion{
+    padding:45px 0px;
+    display:flex;
+    justify-content: center;
+}
+
+
+/*----------------PRODUCTOS------------------*/
+
+/*--------------Primera-seccion---------------*/
+
+.primera-seccion-productos{
+    background:linear-gradient(rgba(0,0,0,0.250), rgba(0,0,0,0.250)), url('./Imagenes/Imagen_productos_1.jpg');
+    background-size:cover;
+    background-position:center ;
+    background-attachment:fixed ;
+    background-repeat: no-repeat;
+    height:80vh;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}   
+
+
+
+.primera-seccion-productos h1{
+    color:white;
+    text-shadow: #0F4C75 1px 3px;
+    font-size:60px;
+    text-align: left;
+    position: relative;
+    bottom:20px;
+
+}
+
+.primera-seccion-productos p{
+    color:white;
+    text-shadow: #0F4C75 1px 3px;
+    font-size:30px;
+    text-align: left;
+    
+}
+
+/*--------------Segunda-seccion---------------*/
+
+.segunda-seccion-productos {
+    background-color: #112B3C;
+}
+
+.contenedor-productos-tienda h2{
+    background-color: black;
+    color:white;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    font-size:40px;
+    text-transform: uppercase;
+    padding:10px 0px;
+}
+
+.productos-tienda{
+    display:flex;
+    justify-content: space-around;
+    padding:20px 0px;
+    flex-wrap: wrap;
+}
+
+/*--------------Productos liquido---------------*/
+
+
+.productos-uno{
+    background:linear-gradient(rgba(255, 255, 255, 0.3), rgba(60, 60, 60, 0.3)), url('./Imagenes/Liquida_1.png');
+    background-size:cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    width:398px;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:10px;
+}
+
+.productos-dos{
+    background:linear-gradient(rgba(255, 255, 255, 0.3), rgba(60, 60, 60, 0.3)), url('./Imagenes/Liquida_2.png');
+    background-size:cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    width:398px;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:10px;
+}
+
+.productos-tres{
+    background:linear-gradient(rgba(255, 255, 255, 0.3), rgba(60, 60, 60, 0.3)), url('./Imagenes/Liquida_3.png');
+    background-size:cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    width:398px;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:10px;
+}
+
+.productos-cuatro{
+    background:linear-gradient(rgba(255, 255, 255, 0.3), rgba(60, 60, 60, 0.3)), url('./Imagenes/Aire_1.jpg');
+    background-size:cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    width:398px;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:10px;
+}
+
+.productos-cinco{
+    background:linear-gradient(rgba(255, 255, 255, 0.3), rgba(60, 60, 60, 0.3)), url('./Imagenes/Aire_2.jpg');
+    background-size:cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    width:398px;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:10px;
+}
+
+.productos-seis{
+    background:linear-gradient(rgba(255, 255, 255, 0.3), rgba(60, 60, 60, 0.3)), url('./Imagenes/Aire_3.jpg');
+    background-size:cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    width:398px;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:10px;
+}
+
+.productos-siete{
+    background:linear-gradient(rgba(255, 255, 255, 0.3), rgba(60, 60, 60, 0.3)), url('./Imagenes/Ventiladores_1.png');
+    background-size:cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    width:398px;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:10px;
+}
+
+.productos-ocho{
+    background:linear-gradient(rgba(255, 255, 255, 0.3), rgba(60, 60, 60, 0.3)), url('./Imagenes/Ventiladores_2.jpg');
+    background-size:cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    width:398px;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:10px;
+}
+
+.productos-nueve{
+    background:linear-gradient(rgba(255, 255, 255, 0.3), rgba(60, 60, 60, 0.3)), url('./Imagenes/Ventiladores_3.jpg');
+    background-size:cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    width:398px;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:10px;
+}
+
+
+.productos-titulo{
+    color:white;
+    text-shadow: black 1px 3px;    
+    text-align:left;
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    padding:0px 20px;
+    
+   
+}
+
+.productos-parrafo{
+    color:white;
+    text-shadow: black 1px 3px;    
+    text-align:justify;
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    padding:0px 20px;
+    position: relative;
+    top:10px;
+  
+}
+
+
+/*--------------SOPORTE---------------*/
+
+/*--------------Primera seccion---------------*/
+
+.primera-seccion-soporte{
+    background:linear-gradient(rgba(0,0,0,0.250), rgba(0,0,0,0.250)), url('./Imagenes/Imagen_soporte_2.jpg');
+    background-size:cover;
+    background-position:center ;
+    background-attachment:fixed ;
+    background-repeat: no-repeat;
+    height:70vh;
+    width:100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}   
+
+.primera-seccion-soporte h1{
+    color:white;
+    text-shadow: #0F4C75 1px 3px;
+    font-size:60px;
+    text-align: right;
+    position:relative;
+    right:20px;
+    bottom:40px;
+    
+}
+
+/*--------------Segunda seccion---------------*/
+
+.segunda-seccion-soporte{
+    background-color: #1B262C;
+    width:100%;
+    height:400px;
+}
+
+.contenedor-soporte{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    padding-top:50px;
+    flex-wrap: wrap;
+}
+.informacion-soporte{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    
+}
+
+.informacion-soporte h2{
+    color:white;
+    font-size:35px;
+    position:relative;
+    bottom:40px;
+
+}
+
+.informacion-soporte p{
+    color:white;
+    text-align: justify;
+    font-size:20px;
+    position:relative;
+    top:20px;
+}
+
+.imagen-soporte img{
+    height: 330px;
+    width:500px;
+    
+    
+}
+
+.imagen-soporte img:hover{
+    transition:1.5s;
+    transform:scale(1.10);
+}
+
+/*--------------Tercera seccion---------------*/
+
+.tercera-seccion-soporte{
+    background-color: #1B262C;
+    width:100%;
+
+}
+
+.tercera-seccion-soporte h2{
+    
+    color:white;
+    padding-left:30px;
+    font-size:35px;
+    text-transform: uppercase;
+}
+
+.contenedor-formulario h3{
+    text-align:center;
+    color:white;
+    font-size:25px;
+    text-transform: uppercase;
+    padding-top:50px;
+}
+
+.formulario{
+    padding:80px 0px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.formulario-datos{
+    padding-right:20px;
+}
+
+.formulario-datos input{
+    width:300px;
+    height:25px;
+    margin-bottom:53px;
+}
+
+.formulario-mensaje{
+    display:flex;
+    flex-direction:column;
+}
+.formulario-mensaje textarea{
+    width:480px;
+    margin-bottom:5px;
+}
+
+.boton-enviar{
+    width:480px;
+    height:25px;
+    background-color: rgb(2, 2, 94);
+    color:white;
+    border-radius: 2px;
+    border:rgb(2, 2, 94);
+}
+
+.boton-enviar:hover{
+    transition:1.5s;
+    background-color:rgb(2, 2, 131);
+    color:gray;
+}
+
+/*--------------CONTACTANOS---------------*/
+
+/*--------------Primera seccion------------*/
+
+.primera-seccion-contacto{
+    background:linear-gradient(rgba(0,0,0,0.250), rgba(0,0,0,0.250)), url('./Imagenes/Imagenes_contactanos_1.jpg');
+    background-size:cover;
+    background-position:center ;
+    background-attachment:fixed ;
+    background-repeat: no-repeat;
+    height:70vh;
+    width:100%;
+    display:flex;
+    align-items: end;
+    justify-content: end;
+}   
+
+.primera-seccion-contacto h1{
+    color:white;
+    text-shadow: #0F4C75 1px 3px;
+    font-size:60px;
+    text-align: right;
+    position:relative;
+    right:20px;
+    bottom:40px;
+}
+
+/*--------------Segunda seccion------------*/
+
+
+.segunda-seccion-contacto{
+    background-color: #1B262C;
+    width:100%;
+  
+}
+
+.segunda-seccion-contacto h2{
+    color:white;
+    
+    padding-top:150px;
+    font-size:35px;
+    text-align: center;
+}
+
+.redes-sociales-contacto{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:300px;
+}
+.redes-sociales-contacto a img{
+    width:120px;
+    height:auto;
+    position:relative;
+    top:80px;
+  
+    
+}
+
+.redes-sociales-contacto a img:hover{
+    transition:1.5s;
+    transform: scale(1.10);
+}
+
+/*--------------Tercera seccion------------*/
+
+.tercera-seccion-contacto{
+    background-color: #1B262C;
+    width:100%;
+}
+
+.tercera-seccion-contacto h2{
+    color:white;
+    
+    padding-top:150px;
+    font-size:35px;
+    text-align: center;
+}
+
+/*-----------------------RESPONSIVE MOBILE----------------------*/
+
+@media all and (max-width:450px) {
+    /*-----------------INDEX-----------------*/
+    .seccion-encabezado{
+        height:160px;
+    }
+    
+    .navegador{
+        flex-direction:column;
+        
+    }
+
+    .navegador-lista{
+        position:relative;
+        left:12px;
+    }
+
+    .navegador-lista li{
+        margin-right:18px;
+    }
+
+    .navegador-lista li a{
+        font-size: 13px;
+    }
+
+    .primera-seccion h1{
+        font-size: 40px;
+        padding:0px 20px;
+        
+    }
+
+    .segunda-seccion h2{
+        font-size: 30px;
+    }
+
+    .producto-1 h3{
+        font-size: 45px;
+    }
+
+    .producto-2 h3{
+        font-size: 45px;
+    }
+
+    .producto-3 h3{
+        font-size: 45px;
+    }
+
+    .seccion-footer{
+        height: 230px;
+    }
+
+    .logo-footer a img{
+        width:auto;
+        height:90px;
+       
+    }
+
+    .navegador-footer-lista li a{
+        font-size: 13px;
+    }
+
+    .redes-sociales{
+        flex-direction:column;
+    }
+
+    .redes-sociales img{
+        width:70px;
+        height:48px;
+    }
+
+    .copyright {
+        position:relative;
+        top:12px;
+    }
+
+    /*-----------------NOSOTROS-----------------*/
+ 
+
+    .informacion-uno h1{
+        
+        font-size:22px;
+
+    }
+    
+    .informacion-uno p{
+ 
+        font-size:12px;
+    }
+    
+
+    .imagen-uno img{
+        height: 100px;
+        width:150px;
+    
+    }
+
+    .informacion-dos h1{
+        
+        font-size:22px;
+
+    }
+    
+    .informacion-dos p{
+ 
+        font-size:12px;
+    }
+    
+
+    .imagen-dos img{
+        height: 100px;
+        width:150px;
+    
+    }
+
+    .ubicacion iframe{
+        width:90%;
+
+    }
+    
+    /*-----------------PRODUCTOS-----------------*/
+
+    .primera-seccion-productos{
+        padding:0px 10px;
+        
+    }
+    .primera-seccion-productos h1{
+        font-size:40px;
+        text-align: center;
+    }
+    
+    .primera-seccion-productos p{
+        font-size:20px;
+        text-align: justify;
+    }
+
+  
+    .productos{
+        width:90%;
+        margin-bottom:15px;
+    }
+
+    .productos h3{
+        font-size: 15px ;
+    }
+
+    .productos p{
+        font-size: 15px ;
+
+    }
+
+    /*-----------------SOPORTE-----------------*/
+
+    .primera-seccion-soporte{
+        justify-content: center;
+        align-items: center;
+    }
+    .primera-seccion-soporte h1{
+        font-size:40px;
+        text-align: center;
+        position:relative;
+        right:0px;
+        bottom:0px;
+
+    }
+
+    .contenedor-soporte{
+        flex-direction:column;
+      
+    }
+
+    .informacion-soporte{
+        width:100%;
+        padding-left:10px;
+    }
+
+    .informacion-soporte h2{
+        
+        font-size:26px;
+        bottom:0px;
+
+    }
+    
+    .informacion-soporte p{
+ 
+        font-size:18px;
+    }
+
+    .imagen-soporte{
+        display:flex;
+        justify-content: center;
+        padding:40px 0px;
+    }
+    
+
+    .imagen-soporte img{
+        height: 190px;
+        width:285px;
+    
+    }
+
+    .tercera-seccion-soporte h2{
+        font-size: 30px;
+        padding:20px 0px;
+        text-align:center;
+    }
+
+    .contenedor-formulario h3{
+        font-size: 20px;
+    }
+
+    .formulario-datos{
+        padding-right: 0px;
+    }
+
+    .formulario-mensaje textarea{
+        width:330px;
+    }
+
+    .formulario-mensaje input{
+        width:330px;
+    }
+
+    /*-----------------CONTACTANOS-----------------*/
+
+    .primera-seccion-contacto{
+        justify-content: center;
+        align-items: center;
+    }
+    .primera-seccion-contacto h1{
+        font-size:40px;
+        text-align: center;
+        position:relative;
+        right:0px;
+        bottom:0px;
+
+    }
+
+    .segunda-seccion-contacto h2{
+       
+        padding:100px 10px 0px 10px;
+        font-size:30px;
+        text-align: center;
+    }
+
+
+    .redes-sociales-contacto a img{
+        width:80px;
+        height:auto;
+        position:relative;
+        top:80px;
+      
+        
+    }
+
+    .tercera-seccion-contacto h2{
+        padding:100px 10px 0px 10px;
+        font-size:30px;
+        text-align: center;
+    }
+
+
+}
+
+/*----------------------RESPONSIBE TABLET-------------------*/
+
+@media all and (min-width:451px) and (max-width:1000px) {
+/*-----------------INDEX-----------------*/
+    .seccion-encabezado{
+        height:160px;
+    }
+
+    .navegador{
+        flex-direction:column;
+        
+    }
+
+    .navegador-lista{
+        position:relative;
+        left:12px;
+    }
+
+    .navegador-lista li{
+        margin-right:18px;
+    }
+
+    .navegador-lista li a{
+        font-size: 18px;
+    }
+
+    .primera-seccion h1{
+        font-size: 40px;
+        padding:0px 20px;
+        
+    }
+
+    .segunda-seccion h2{
+        font-size: 35px;
+    }
+
+    .producto-1 h3{
+        font-size: 45px;
+    }
+
+    .producto-2 h3{
+        font-size: 45px;
+    }
+
+    .producto-3 h3{
+        font-size: 45px;
+    }
+
+    .seccion-footer{
+        height: 230px;
+    }
+
+    .logo-footer a img{
+        width:auto;
+        height:90px;
+    
+    }
+
+    .navegador-footer-lista li a{
+        font-size: 18px;
+    }
+
+    .redes-sociales{
+        flex-direction:column;
+    }
+
+    .redes-sociales img{
+        width:70px;
+        height:48px;
+    }
+
+    .copyright {
+        position:relative;
+        top:12px;
+    }
+
+    /*-----------------NOSOTROS-----------------*/
+
+    .informacion-uno h1{
+        
+        font-size:25px;
+
+    }
+    
+    .informacion-uno p{
+ 
+        font-size:15px;
+    }
+    
+
+    .imagen-uno img{
+        height: 220px;
+        width:330px;
+    
+    }
+
+    .informacion-dos h1{
+        
+        font-size:25px;
+
+    }
+    
+    .informacion-dos p{
+ 
+        font-size:15px;
+    }
+    
+
+    .imagen-dos img{
+        height: 220px;
+        width:330px;
+    
+    }
+
+    .ubicacion iframe{
+        width:90%;
+
+    }
+
+
+    /*-------------------SOPORTE-------------------*/
+
+    
+
+
+    
+    .informacion-soporte{
+       align-items: center;
+    }
+
+    .informacion-soporte h2{
+        
+        font-size:30px;
+        bottom:0px;
+
+    }
+    
+    .informacion-soporte p{
+        font-size:25px;
+        right:20px;
+    }
+
+    .imagen-soporte{
+        display:flex;
+        justify-content: center;
+        padding:40px 0px;
+    }
+    
+
+    .imagen-soporte img{
+        height: 250px;
+        width:375px;
+    
+    }
+
+    .tercera-seccion-soporte h2{
+        font-size: 40px;
+        padding:80px 0px;
+        text-align:center;
+    }
+
+    .formulario-datos{
+        padding-right: 0px;
+        color:white;
+    }
+
+
+
+}
