@@ -5,7 +5,23 @@
     padding:0px;
     box-sizing: border-box;
 }
+/*------------------Animaciones-------------------*/
 
+@keyframes aparicion {
+    0%{
+        opacity: 0;
+        transform: scale3d(.70,.70,1);
+    }
+    
+    20%{
+        opacity: 0;
+        transform: scale3d(.70,.70,1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale3d(1,1,1);
+    }
+}
 /*--------------------INDEX-----------------------*/
 
 /*----------------Encabezado------------------*/
@@ -36,6 +52,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    animation: aparicion 1.7s;
 }
 .logo{
 
@@ -101,6 +118,8 @@
     color:white;
     text-shadow: #0F4C75 1px 3px;
     font-size:60px;
+    animation: aparicion 0.75s;
+
 
     
 }
@@ -445,6 +464,7 @@
     text-align: left;
     position: relative;
     bottom:20px;
+    animation: aparicion 0.75s;
 
 }
 
@@ -453,6 +473,7 @@
     text-shadow: #0F4C75 1px 3px;
     font-size:30px;
     text-align: left;
+    animation: aparicion 0.75s;
     
 }
 
@@ -649,7 +670,7 @@
     position:relative;
     right:20px;
     bottom:40px;
-    
+    animation: aparicion 0.75s;
 }
 
 /*--------------Segunda seccion---------------*/
@@ -794,6 +815,7 @@
     position:relative;
     right:20px;
     bottom:40px;
+    animation: aparicion 0.75s;
 }
 
 /*--------------Segunda seccion------------*/

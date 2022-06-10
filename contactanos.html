@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Link CSS-->
     <link rel="stylesheet" href="style.css">
     <!--Titulo-->
@@ -41,7 +43,7 @@
     <!--Segunda Seccion-->
         <section class="segunda-seccion-contacto">
             <h2>Comunícate con nosotros en nuestras redes sociales...</h2>
-            <div class="redes-sociales-contacto">
+            <div class="redes-sociales-contacto" class="formulario" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="2000">
                 <a href=""><img src="./Imagenes/whatsapp.png" alt="Whatsapp"></a>
                 <a href="I"><img src="./Imagenes/facebook.png" alt="Facebook"></a>
                 <a href=""><img src="./Imagenes/instagram.png" alt="Instagram"></a>
@@ -52,7 +54,7 @@
         <section class="tercera-seccion-contacto">
             <h2>O envíanos un mensaje!</h2>
             <div class="contenedor-formulario">
-                <form action="/action_page.php" class="formulario">
+                <form action="/action_page.php" class="formulario" data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="2000">
                     <div class="formulario-datos">
                         <input type="text" id="fname" name="fname" value="Nombres"><br>
                         <input type="text" id="lname" name="lname" value="Apellidos"><br>
@@ -101,5 +103,10 @@
         </div>
         
     </footer>
+    <!--Js script-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

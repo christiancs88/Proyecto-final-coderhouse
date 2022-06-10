@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Link CSS-->
     <link rel="stylesheet" href="style.css">
     <!--Titulo-->
@@ -34,7 +36,7 @@
     <!--Principal-Primera Seccion-->
     <main class="main">
         <section class="primera-seccion-nosotros">
-            <div class="contenedor-nosotros-uno">
+            <div class="contenedor-nosotros-uno" data-aos="fade-up" data-aos-delay="300" data-aos-duration="2000">
                 <div class="informacion-uno">
                     <h1> Acerca de Nosotros </h1>
                     <p> Somos unos orgullosos distribuidores de la marca Artic, dicha marca ha contribuido a la creación de cómodas estaciones de trabajo para PC durante 20 años; además nuestro segmento principal es la refrigeración (sistemas de refrigeración silenciosos y ventiladores para PC), no importa la función, todos los productos ARCTIC comparten una característica: alta calidad a precios excelentes.
@@ -45,7 +47,7 @@
                 </div>
                 
             </div>
-            <div class="contenedor-nosotros-dos">
+            <div class="contenedor-nosotros-dos" data-aos="fade-up" data-aos-delay="300" data-aos-duration="2000">
                 <div class="imagen-dos">
                     <img src="./Imagenes/Imagen_nosotros_2.jpg" alt="Imagen nosotros 2">
                 </div>
@@ -101,5 +103,11 @@
         </div>
         
     </footer>
+
+    <!--Js script-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

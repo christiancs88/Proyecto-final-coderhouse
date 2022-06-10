@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Link CSS-->
     <link rel="stylesheet" href="style.css">
     <!--Titulo-->
@@ -41,15 +43,15 @@
     <!--Segunda Seccion-->
         <section class="segunda-seccion">
             <h2>Los mas vendidos</h2>
-            <div class="contenedor-productos">
-                <div class="producto-1">
+            <div class="contenedor-productos" >
+                <div class="producto-1" data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="2000">
                     <h3>Liquid Freezer II A-RGB/</h3>
                 </div>
-                <div class="producto-2">
+                <div class="producto-2" data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="2000">
           
                     <h3>Freezer 50 TR MIT A-RGB Controller</h3>
                 </div>
-                <div class="producto-3">
+                <div class="producto-3" data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="2000">
                     
                     <h3>P12 PWM PST A-RGB 0dB</h3>
                 </div>
@@ -89,5 +91,12 @@
         </div>
         
     </footer>
+
+    <!--Js script-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
 </body>
 </html>
