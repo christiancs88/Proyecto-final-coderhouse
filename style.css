@@ -850,7 +850,7 @@
 
 /*-----------------------RESPONSIVE MOBILE----------------------*/
 
-@media all and (max-width:450px) {
+@media all and (max-width:483px) {
     /*-----------------INDEX-----------------*/
     .seccion-encabezado{
         height:160px;
@@ -1114,7 +1114,7 @@
 
 /*----------------------RESPONSIBE TABLET-------------------*/
 
-@media all and (min-width:451px) and (max-width:1000px) {
+@media all and (min-width:484px) and (max-width:1000px) {
 /*-----------------INDEX-----------------*/
     .seccion-encabezado{
         height:160px;
@@ -1275,7 +1275,6 @@
 
     .formulario-datos{
         padding-right: 0px;
-        color:white;
     }
 
 
