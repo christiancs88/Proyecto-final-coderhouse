@@ -39,60 +39,26 @@
 .seccion-encabezado{
     grid-area:encabezado;
     background-color:black;
-    height:140px;
     width:100%;
     position:sticky;
     top:0;
-    z-index: 1;
+    z-index: 2;
 }
 
-.navegador{
-    width:100%;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    animation: aparicion 1.7s;
-}
-.logo{
 
-    height:130px;
-
-}
-
-.logo a img{
+.logo {
     width:auto;
     height:120px;
-    position:relative;
-    top:10px;
+    animation: aparicion 1.7s;
     
 }
 .navegador-lista {
-    font-family: 'Roboto', sans-serif;
-    display:flex;
-    align-items: center;
-   
-    
-    
-}
-
-.navegador-lista li{
-    text-decoration: none;
-    margin-right:25px;
-    
-}
-
-.navegador-lista li a{
-    text-decoration: none;
-    list-style: none;
     color:white;
     font-size:17px;
+    animation: aparicion 1.7s;
+    font-family: 'Roboto', sans-serif;
 }
 
-.navegador-lista li a:hover{
-    transition:1.5s;
-    color:gray;
-}
 
 .main{
     grid-area:main;
@@ -118,6 +84,7 @@
     color:white;
     text-shadow: #0F4C75 1px 3px;
     font-size:60px;
+    font-family: 'Esteban', serif;
     animation: aparicion 0.75s;
 
 
@@ -251,10 +218,15 @@
     grid-area:titulo-menu;
     color:white;
     text-transform: uppercase;
-    font-size:20px;
     display:flex;
     justify-content: center;
     align-items:end;
+}
+
+.titulo-menu h3{
+    font-size:22px;
+    font-family: 'Esteban', serif;
+
 }
 .navegador-footer-lista {
     grid-area:menu;
@@ -263,12 +235,13 @@
     flex-direction: column;
     align-items: center;
     justify-content:center;
+    position:relative;
+    right:15px;
 }
 
 .navegador-footer-lista li{
     text-decoration: none;
     display:flex;
-    padding-bottom:3px;
     
 }
 
@@ -342,6 +315,8 @@
     flex-direction: column;
     justify-content: center;
     width: 50%;
+    font-family: 'Esteban', serif;
+
 }
 
 .informacion-uno h1{
@@ -356,6 +331,7 @@
     color:white;
     text-align: justify;
     font-size:20px;
+
 }
 
 
@@ -383,6 +359,7 @@
     flex-direction: column;
     justify-content: center;
     width: 50%;
+    font-family: 'Esteban', serif;
 
 }
 
@@ -453,6 +430,8 @@
     display:flex;
     flex-direction: column;
     justify-content:center;
+    font-family: 'Esteban', serif;
+
 }   
 
 
@@ -498,6 +477,7 @@
     justify-content: space-around;
     padding:20px 0px;
     flex-wrap: wrap;
+    
 }
 
 /*--------------Productos liquido---------------*/
@@ -514,6 +494,7 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom:10px;
+    
 }
 
 .productos-dos{
@@ -660,6 +641,8 @@
     display: flex;
     justify-content: end;
     align-items: end;
+    font-family: 'Esteban', serif;
+
 }   
 
 .primera-seccion-soporte h1{
@@ -679,6 +662,7 @@
     background-color: #1B262C;
     width:100%;
     height:400px;
+    
 }
 
 .contenedor-soporte{
@@ -687,6 +671,8 @@
     justify-content: space-around;
     padding-top:50px;
     flex-wrap: wrap;
+    font-family: 'Esteban', serif;
+
 }
 .informacion-soporte{
     display:flex;
@@ -729,13 +715,15 @@
 .tercera-seccion-soporte{
     background-color: #1B262C;
     width:100%;
+    font-family: 'Esteban', serif;
+
 
 }
 
 .tercera-seccion-soporte h2{
     
     color:white;
-    padding-left:30px;
+    padding-left:85px;
     font-size:35px;
     text-transform: uppercase;
 }
@@ -772,6 +760,7 @@
 }
 .formulario-mensaje textarea{
     width:480px;
+    height:150px;
     margin-bottom:5px;
 }
 
@@ -805,6 +794,7 @@
     display:flex;
     align-items: end;
     justify-content: end;
+    
 }   
 
 .primera-seccion-contacto h1{
@@ -874,27 +864,7 @@
 
 @media all and (max-width:483px) {
     /*-----------------INDEX-----------------*/
-    .seccion-encabezado{
-        height:160px;
-    }
     
-    .navegador{
-        flex-direction:column;
-        
-    }
-
-    .navegador-lista{
-        position:relative;
-        left:12px;
-    }
-
-    .navegador-lista li{
-        margin-right:18px;
-    }
-
-    .navegador-lista li a{
-        font-size: 13px;
-    }
 
     .primera-seccion h1{
         font-size: 40px;
@@ -929,7 +899,7 @@
     }
 
     .navegador-footer-lista li a{
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .redes-sociales{
@@ -1138,28 +1108,7 @@
 
 @media all and (min-width:484px) and (max-width:1000px) {
 /*-----------------INDEX-----------------*/
-    .seccion-encabezado{
-        height:160px;
-    }
-
-    .navegador{
-        flex-direction:column;
-        
-    }
-
-    .navegador-lista{
-        position:relative;
-        left:12px;
-    }
-
-    .navegador-lista li{
-        margin-right:18px;
-    }
-
-    .navegador-lista li a{
-        font-size: 18px;
-    }
-
+   
     .primera-seccion h1{
         font-size: 40px;
         padding:0px 20px;
@@ -1193,7 +1142,7 @@
     }
 
     .navegador-footer-lista li a{
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .redes-sociales{
