@@ -696,6 +696,7 @@
     font-size:20px;
     position:relative;
     top:20px;
+    line-height: 1.1;
 }
 
 .imagen-soporte img{
@@ -717,13 +718,12 @@
     width:100%;
     font-family: 'Esteban', serif;
 
-
 }
 
 .tercera-seccion-soporte h2{
     
     color:white;
-    padding-left:85px;
+    padding-left:30px;
     font-size:35px;
     text-transform: uppercase;
 }
@@ -806,6 +806,8 @@
     right:20px;
     bottom:40px;
     animation: aparicion 0.75s;
+    font-family: 'Esteban', serif;
+
 }
 
 /*--------------Segunda seccion------------*/
@@ -819,7 +821,7 @@
 
 .segunda-seccion-contacto h2{
     color:white;
-    
+    font-family: 'Esteban', serif;
     padding-top:150px;
     font-size:35px;
     text-align: center;
@@ -854,7 +856,7 @@
 
 .tercera-seccion-contacto h2{
     color:white;
-    
+    font-family: 'Esteban', serif;
     padding-top:150px;
     font-size:35px;
     text-align: center;
