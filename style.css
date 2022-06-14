@@ -39,60 +39,26 @@
 .seccion-encabezado{
     grid-area:encabezado;
     background-color:black;
-    height:140px;
     width:100%;
     position:sticky;
     top:0;
-    z-index: 1;
+    z-index: 2;
 }
 
-.navegador{
-    width:100%;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    animation: aparicion 1.7s;
-}
-.logo{
 
-    height:130px;
-
-}
-
-.logo a img{
+.logo {
     width:auto;
     height:120px;
-    position:relative;
-    top:10px;
+    animation: aparicion 1.7s;
     
 }
 .navegador-lista {
-    font-family: 'Roboto', sans-serif;
-    display:flex;
-    align-items: center;
-   
-    
-    
-}
-
-.navegador-lista li{
-    text-decoration: none;
-    margin-right:25px;
-    
-}
-
-.navegador-lista li a{
-    text-decoration: none;
-    list-style: none;
     color:white;
     font-size:17px;
+    animation: aparicion 1.7s;
+    font-family: 'Roboto', sans-serif;
 }
 
-.navegador-lista li a:hover{
-    transition:1.5s;
-    color:gray;
-}
 
 .main{
     grid-area:main;
@@ -118,19 +84,42 @@
     color:white;
     text-shadow: #0F4C75 1px 3px;
     font-size:60px;
+    font-family: 'Esteban', serif;
     animation: aparicion 0.75s;
 
 
     
 }
+
 /*----------------Segunda sección------------------*/
 
 .segunda-seccion{
+    width:100%;
+    background-color: black;
+}
+
+.segunda-seccion h2{
+    color:white;
+    font-size:50px;
+    font-family: 'Esteban', serif;
+    padding:10px 0px;
+    text-align: center;
+}
+
+.carrusel-imagen {
+    height:420px;
+    object-fit: cover;
+}
+
+
+/*----------------Tercera sección------------------*/
+
+.tercera-seccion{
     background-color: black;
     width:100%;
 }
 
-.segunda-seccion h2{
+.tercera-seccion h2{
     color:white;
     text-align:center;
     font-family: 'Roboto', sans-serif;
@@ -251,10 +240,15 @@
     grid-area:titulo-menu;
     color:white;
     text-transform: uppercase;
-    font-size:20px;
     display:flex;
     justify-content: center;
     align-items:end;
+}
+
+.titulo-menu h3{
+    font-size:22px;
+    font-family: 'Esteban', serif;
+
 }
 .navegador-footer-lista {
     grid-area:menu;
@@ -263,12 +257,13 @@
     flex-direction: column;
     align-items: center;
     justify-content:center;
+    position:relative;
+    right:15px;
 }
 
 .navegador-footer-lista li{
     text-decoration: none;
     display:flex;
-    padding-bottom:3px;
     
 }
 
@@ -342,6 +337,8 @@
     flex-direction: column;
     justify-content: center;
     width: 50%;
+    font-family: 'Esteban', serif;
+
 }
 
 .informacion-uno h1{
@@ -356,6 +353,7 @@
     color:white;
     text-align: justify;
     font-size:20px;
+
 }
 
 
@@ -383,6 +381,7 @@
     flex-direction: column;
     justify-content: center;
     width: 50%;
+    font-family: 'Esteban', serif;
 
 }
 
@@ -453,6 +452,8 @@
     display:flex;
     flex-direction: column;
     justify-content:center;
+    font-family: 'Esteban', serif;
+
 }   
 
 
@@ -465,6 +466,7 @@
     position: relative;
     bottom:20px;
     animation: aparicion 0.75s;
+    padding:0px 40px;
 
 }
 
@@ -474,9 +476,8 @@
     font-size:30px;
     text-align: left;
     animation: aparicion 0.75s;
-    
+    padding:0px 40px;
 }
-
 /*--------------Segunda-seccion---------------*/
 
 .segunda-seccion-productos {
@@ -498,6 +499,7 @@
     justify-content: space-around;
     padding:20px 0px;
     flex-wrap: wrap;
+    
 }
 
 /*--------------Productos liquido---------------*/
@@ -514,6 +516,7 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom:10px;
+    
 }
 
 .productos-dos{
@@ -660,6 +663,8 @@
     display: flex;
     justify-content: end;
     align-items: end;
+    font-family: 'Esteban', serif;
+
 }   
 
 .primera-seccion-soporte h1{
@@ -679,14 +684,16 @@
     background-color: #1B262C;
     width:100%;
     height:400px;
+    
 }
 
 .contenedor-soporte{
     width:100%;
-    display:flex;
     justify-content: space-around;
     padding-top:50px;
-    flex-wrap: wrap;
+    font-family: 'Esteban', serif;
+
+
 }
 .informacion-soporte{
     display:flex;
@@ -710,11 +717,17 @@
     font-size:20px;
     position:relative;
     top:20px;
+    line-height: 1.1;
+}
+
+.imagen-soporte{
+    padding-right:0px;
 }
 
 .imagen-soporte img{
     height: 330px;
     width:500px;
+    
     
     
 }
@@ -729,6 +742,7 @@
 .tercera-seccion-soporte{
     background-color: #1B262C;
     width:100%;
+    font-family: 'Esteban', serif;
 
 }
 
@@ -772,6 +786,7 @@
 }
 .formulario-mensaje textarea{
     width:480px;
+    height:150px;
     margin-bottom:5px;
 }
 
@@ -805,6 +820,7 @@
     display:flex;
     align-items: end;
     justify-content: end;
+    
 }   
 
 .primera-seccion-contacto h1{
@@ -816,6 +832,8 @@
     right:20px;
     bottom:40px;
     animation: aparicion 0.75s;
+    font-family: 'Esteban', serif;
+
 }
 
 /*--------------Segunda seccion------------*/
@@ -829,7 +847,7 @@
 
 .segunda-seccion-contacto h2{
     color:white;
-    
+    font-family: 'Esteban', serif;
     padding-top:150px;
     font-size:35px;
     text-align: center;
@@ -864,7 +882,7 @@
 
 .tercera-seccion-contacto h2{
     color:white;
-    
+    font-family: 'Esteban', serif;
     padding-top:150px;
     font-size:35px;
     text-align: center;
@@ -874,27 +892,7 @@
 
 @media all and (max-width:483px) {
     /*-----------------INDEX-----------------*/
-    .seccion-encabezado{
-        height:160px;
-    }
     
-    .navegador{
-        flex-direction:column;
-        
-    }
-
-    .navegador-lista{
-        position:relative;
-        left:12px;
-    }
-
-    .navegador-lista li{
-        margin-right:18px;
-    }
-
-    .navegador-lista li a{
-        font-size: 13px;
-    }
 
     .primera-seccion h1{
         font-size: 40px;
@@ -902,7 +900,7 @@
         
     }
 
-    .segunda-seccion h2{
+    .tercera-seccion h2{
         font-size: 30px;
     }
 
@@ -929,7 +927,7 @@
     }
 
     .navegador-footer-lista li a{
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .redes-sociales{
@@ -1035,33 +1033,32 @@
         bottom:0px;
 
     }
-
-    .contenedor-soporte{
-        flex-direction:column;
-      
-    }
-
+    
     .informacion-soporte{
+        display: flex;
+        align-items: center;
         width:100%;
-        padding-left:10px;
+        
     }
 
     .informacion-soporte h2{
-        
         font-size:26px;
         bottom:0px;
 
     }
     
     .informacion-soporte p{
- 
         font-size:18px;
+        right:30px;
     }
 
     .imagen-soporte{
-        display:flex;
+        width:100%;
+        display: flex;
         justify-content: center;
-        padding:40px 0px;
+        padding-top:40px;
+        padding-left:20px;
+
     }
     
 
@@ -1136,37 +1133,16 @@
 
 /*----------------------RESPONSIBE TABLET-------------------*/
 
-@media all and (min-width:484px) and (max-width:1000px) {
+@media all and (min-width:484px) and (max-width:1050px) {
 /*-----------------INDEX-----------------*/
-    .seccion-encabezado{
-        height:160px;
-    }
-
-    .navegador{
-        flex-direction:column;
-        
-    }
-
-    .navegador-lista{
-        position:relative;
-        left:12px;
-    }
-
-    .navegador-lista li{
-        margin-right:18px;
-    }
-
-    .navegador-lista li a{
-        font-size: 18px;
-    }
-
+   
     .primera-seccion h1{
         font-size: 40px;
         padding:0px 20px;
         
     }
 
-    .segunda-seccion h2{
+    .tercera-seccion h2{
         font-size: 35px;
     }
 
@@ -1193,7 +1169,7 @@
     }
 
     .navegador-footer-lista li a{
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .redes-sociales{
@@ -1256,30 +1232,29 @@
 
     /*-------------------SOPORTE-------------------*/
 
-    
 
-
-    
     .informacion-soporte{
+       display: flex;
        align-items: center;
     }
 
     .informacion-soporte h2{
         
-        font-size:30px;
+        font-size:35px;
         bottom:0px;
 
     }
     
     .informacion-soporte p{
-        font-size:25px;
-        right:20px;
+        font-size:20px;
+        right:65px;
     }
 
     .imagen-soporte{
         display:flex;
         justify-content: center;
-        padding:40px 0px;
+        padding-top:40px;
+        padding-left:20px;
     }
     
 
