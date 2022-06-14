@@ -248,6 +248,8 @@
 .titulo-menu h3{
     font-size:22px;
     font-family: 'Esteban', serif;
+    position:relative;
+    right:14px;
 
 }
 .navegador-footer-lista {
@@ -258,7 +260,7 @@
     align-items: center;
     justify-content:center;
     position:relative;
-    right:15px;
+    right:30px;
 }
 
 .navegador-footer-lista li{
@@ -900,20 +902,25 @@
         
     }
 
+    .segunda-seccion h2{
+        font-size: 30px;
+    }
+
+
     .tercera-seccion h2{
         font-size: 30px;
     }
 
     .producto-1 h3{
-        font-size: 45px;
+        font-size: 35px;
     }
 
     .producto-2 h3{
-        font-size: 45px;
+        font-size: 35px;
     }
 
     .producto-3 h3{
-        font-size: 45px;
+        font-size: 35px;
     }
 
     .seccion-footer{
@@ -922,9 +929,14 @@
 
     .logo-footer a img{
         width:auto;
-        height:90px;
+        height:82px;
        
     }
+
+    .titulo-menu h3{
+        right:15px;
+    }
+
 
     .navegador-footer-lista li a{
         font-size: 15px;
@@ -995,7 +1007,7 @@
         
     }
     .primera-seccion-productos h1{
-        font-size:40px;
+        font-size:35px;
         text-align: center;
     }
     
@@ -1003,19 +1015,135 @@
         font-size:20px;
         text-align: justify;
     }
+    
+    .contenedor-productos-tienda h2{
+        font-size: 30px;
+    }
 
-  
-    .productos{
-        width:90%;
+
+    .productos-uno{
+        width:96%;
         margin-bottom:15px;
     }
 
-    .productos h3{
-        font-size: 15px ;
+    .productos-uno h3{
+        font-size: 17px ;
     }
 
-    .productos p{
-        font-size: 15px ;
+    .productos-uno p{
+        font-size: 17px;
+
+    }
+
+    .productos-dos{
+        width:96%;
+        margin-bottom:15px;
+    }
+
+    .productos-dos h3{
+        font-size: 17px ;
+    }
+
+    .productos-dos p{
+        font-size: 17px;
+
+    }
+
+    .productos-tres{
+        width:96%;
+        margin-bottom:15px;
+    }
+
+    .productos-tres h3{
+        font-size: 17px ;
+    }
+
+    .productos-tres p{
+        font-size: 17px;
+
+    }
+
+    .productos-cuatro{
+        width:96%;
+        margin-bottom:15px;
+    }
+
+    .productos-cuatro h3{
+        font-size: 17px ;
+    }
+
+    .productos-cuatro p{
+        font-size: 17px;
+
+    }
+
+    .productos-cinco{
+        width:96%;
+        margin-bottom:15px;
+    }
+
+    .productos-cinco h3{
+        font-size: 17px ;
+    }
+
+    .productos-cinco p{
+        font-size: 17px;
+
+    }
+
+    .productos-seis{
+        width:96%;
+        margin-bottom:15px;
+    }
+
+    .productos-seis h3{
+        font-size: 17px ;
+    }
+
+    .productos-seis p{
+        font-size: 17px;
+
+    }
+
+    .productos-siete{
+        width:96%;
+        margin-bottom:15px;
+    }
+
+    .productos-siete h3{
+        font-size: 17px ;
+    }
+
+    .productos-siete p{
+        font-size: 17px;
+
+    }
+
+    .productos-ocho{
+        width:96%;
+        margin-bottom:15px;
+    }
+
+    .productos-ocho h3{
+        font-size: 17px ;
+    }
+
+    .productos-ocho p{
+        font-size: 17px;
+
+    }
+
+    .productos-nueve{
+        width:96%;
+        margin-bottom:15px;
+    }
+
+    .productos-nueve h3{
+        font-size: 17px ;
+    }
+
+    .productos-nueve p{
+        font-size: 17px;
 
     }
 
@@ -1141,6 +1269,11 @@
         padding:0px 20px;
         
     }
+
+    .segunda-seccion h2{
+        font-size: 35px;
+    }
+
 
     .tercera-seccion h2{
         font-size: 35px;
