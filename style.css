@@ -90,14 +90,36 @@
 
     
 }
+
 /*----------------Segunda sección------------------*/
 
 .segunda-seccion{
+    width:100%;
+    background-color: black;
+}
+
+.segunda-seccion h2{
+    color:white;
+    font-size:50px;
+    font-family: 'Esteban', serif;
+    padding:10px 0px;
+    text-align: center;
+}
+
+.carrusel-imagen {
+    height:420px;
+    object-fit: cover;
+}
+
+
+/*----------------Tercera sección------------------*/
+
+.tercera-seccion{
     background-color: black;
     width:100%;
 }
 
-.segunda-seccion h2{
+.tercera-seccion h2{
     color:white;
     text-align:center;
     font-family: 'Roboto', sans-serif;
@@ -444,6 +466,7 @@
     position: relative;
     bottom:20px;
     animation: aparicion 0.75s;
+    padding:0px 40px;
 
 }
 
@@ -453,9 +476,8 @@
     font-size:30px;
     text-align: left;
     animation: aparicion 0.75s;
-    
+    padding:0px 40px;
 }
-
 /*--------------Segunda-seccion---------------*/
 
 .segunda-seccion-productos {
@@ -667,11 +689,10 @@
 
 .contenedor-soporte{
     width:100%;
-    display:flex;
     justify-content: space-around;
     padding-top:50px;
-    flex-wrap: wrap;
     font-family: 'Esteban', serif;
+
 
 }
 .informacion-soporte{
@@ -699,9 +720,14 @@
     line-height: 1.1;
 }
 
+.imagen-soporte{
+    padding-right:0px;
+}
+
 .imagen-soporte img{
     height: 330px;
     width:500px;
+    
     
     
 }
@@ -874,7 +900,7 @@
         
     }
 
-    .segunda-seccion h2{
+    .tercera-seccion h2{
         font-size: 30px;
     }
 
@@ -1007,33 +1033,32 @@
         bottom:0px;
 
     }
-
-    .contenedor-soporte{
-        flex-direction:column;
-      
-    }
-
+    
     .informacion-soporte{
+        display: flex;
+        align-items: center;
         width:100%;
-        padding-left:10px;
+        
     }
 
     .informacion-soporte h2{
-        
         font-size:26px;
         bottom:0px;
 
     }
     
     .informacion-soporte p{
- 
         font-size:18px;
+        right:30px;
     }
 
     .imagen-soporte{
-        display:flex;
+        width:100%;
+        display: flex;
         justify-content: center;
-        padding:40px 0px;
+        padding-top:40px;
+        padding-left:20px;
+
     }
     
 
@@ -1108,7 +1133,7 @@
 
 /*----------------------RESPONSIBE TABLET-------------------*/
 
-@media all and (min-width:484px) and (max-width:1000px) {
+@media all and (min-width:484px) and (max-width:1050px) {
 /*-----------------INDEX-----------------*/
    
     .primera-seccion h1{
@@ -1117,7 +1142,7 @@
         
     }
 
-    .segunda-seccion h2{
+    .tercera-seccion h2{
         font-size: 35px;
     }
 
@@ -1207,30 +1232,29 @@
 
     /*-------------------SOPORTE-------------------*/
 
-    
 
-
-    
     .informacion-soporte{
+       display: flex;
        align-items: center;
     }
 
     .informacion-soporte h2{
         
-        font-size:30px;
+        font-size:35px;
         bottom:0px;
 
     }
     
     .informacion-soporte p{
-        font-size:25px;
-        right:20px;
+        font-size:20px;
+        right:65px;
     }
 
     .imagen-soporte{
         display:flex;
         justify-content: center;
-        padding:40px 0px;
+        padding-top:40px;
+        padding-left:20px;
     }
     
 
