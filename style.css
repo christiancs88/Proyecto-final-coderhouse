@@ -249,7 +249,8 @@
     font-size:22px;
     font-family: 'Esteban', serif;
     position:relative;
-    right:14px;
+    right:13px;
+    top:2px;
 
 }
 .navegador-footer-lista {
@@ -261,6 +262,7 @@
     justify-content:center;
     position:relative;
     right:30px;
+    top:5px;
 }
 
 .navegador-footer-lista li{
@@ -476,7 +478,7 @@
     color:white;
     text-shadow: #0F4C75 1px 3px;
     font-size:30px;
-    text-align: left;
+    text-align: justify;
     animation: aparicion 0.75s;
     padding:0px 40px;
 }
@@ -934,7 +936,8 @@
     }
 
     .titulo-menu h3{
-        right:15px;
+        top:5px;
+        right:13px;
     }
 
 
@@ -972,7 +975,7 @@
     
 
     .imagen-uno img{
-        height: 100px;
+        height: 130px;
         width:150px;
     
     }
@@ -990,7 +993,7 @@
     
 
     .imagen-dos img{
-        height: 100px;
+        height: 130px;
         width:150px;
     
     }
