@@ -1,0 +1,177 @@
+.main{
+    grid-area:main;
+    .primera-seccion-nosotros{
+        background-color: $dark-gray;
+        width:100%;
+        .contenedor-nosotros-uno{
+            width:100%;
+            @include display-nosotros(flex,space-around);
+            padding-top:50px;
+            .informacion-uno{
+                @include display-general(flex,column,center);
+                width: 50%;
+                font-family: $font-esteban;
+                h2{
+                    color:$white;
+                    font-size:35px;
+                    position:relative;
+                    bottom:20px;
+                    @media all and (max-width:483px){
+                            font-size:22px;
+
+                     }
+                     @media all and (min-width:484px) and (max-width:1050px){
+                            font-size:25px;
+                    }
+                }
+                p{
+                    color:$white;
+                    text-align: justify;
+                    font-size:20px;
+                    @media all and (max-width:483px){
+                            font-size:12px;
+                     }
+                     @media all and (min-width:484px) and (max-width:1050px){
+                            font-size:15px;
+                    }
+                }
+            }
+            .imagen-uno{
+                img{
+                    height: 330px;
+                    width:500px;
+                    &:hover{
+                        transition:1.5s;
+                        transform:scale(1.10);
+                    }
+                    @media all and (max-width:483px){
+                            height: 130px;
+                            width:150px;
+                     }
+                     @media all and (min-width:484px) and (max-width:1050px){
+                            height: 220px;
+                            width:330px;
+                    }
+                }
+            }
+        }
+        .contenedor-nosotros-dos{
+            width:100%;
+            @include display-nosotros(flex,space-around);
+            padding-top:50px;
+            padding-bottom:50px;
+            .imagen-dos{
+                img{
+                    height: 330px;
+                    width:500px;
+                    &:hover{
+                        transition:1.5s;
+                        transform:scale(1.10);
+                    }
+                    @media all and (max-width:483px){
+                            height: 130px;
+                            width:150px;
+                     }
+                     
+                    @media all and (min-width:484px) and (max-width:1050px){
+                            height: 220px;
+                            width:330px;
+                    }
+                }
+            }
+            .informacion-dos{
+                @include display-general(flex,column,center);
+                width: 50%;
+                font-family: $font-esteban;
+                h2{
+                    color:$white;
+                    font-size:35px;
+                    position:relative;
+                    bottom:20px;
+                    text-align: right;
+                    @media all and (max-width:483px){
+                            font-size:22px;
+
+                     }
+                     @media all and (min-width:484px) and (max-width:1050px){
+                            font-size:25px;
+                    }
+                    
+                }
+                p{
+                    color:$white;
+                    text-align: justify;
+                    font-size:20px;
+                    @media all and (max-width:483px){
+                            font-size:12px;
+                     }
+                     @media all and (min-width:484px) and (max-width:1050px){
+                            font-size:15px;
+                    }
+                    
+                }
+            }
+
+        }
+    }
+    .segunda-seccion-nosotros{
+        background-color: $dark-gray-two;
+        width:100%;
+        .titulo-ubicacion{
+            background-color: $dark;
+            text-align:center;
+            text-transform: uppercase;
+            padding:10px 0px;
+            h2{
+                color:$white;
+                font-family: $font-roboto;
+                font-size:40px;
+            }
+        }
+        .ubicacion{
+            padding:45px 0px;
+            @include display-center-end(flex,center,center);
+           
+             iframe{
+                @media all and (max-width:483px){
+                    width:90%;
+             }
+                @media all and (min-width:484px) and (max-width:1050px){
+                    width:90%;
+            }
+             }
+            
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

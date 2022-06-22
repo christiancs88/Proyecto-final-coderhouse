@@ -1,0 +1,17 @@
+/*general*/
+
+@import '../scss/general/reset';
+
+/*base*/
+
+@import '../scss/abstract/base';
+
+/*componentes*/
+
+@import '../scss/components/header';
+@import '../scss/layout/index';
+@import '../scss/components/footer';
+@import '../scss/layout/nosotros';
+@import '../scss/layout/productos';
+@import '../scss/layout/soporte';
+@import '../scss/layout/contactanos';

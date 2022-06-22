@@ -1,0 +1,171 @@
+.seccion-footer{
+    grid-area:footer;
+    background-color: $dark;
+    width:100%;
+    height:200px;
+    .enlaces-footer{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows:40px 130px 20px;
+        grid-template-areas: 
+            "logo titulo-menu redes-sociales"
+            "logo menu redes-sociales"
+            "copyright copyright copyright";
+        .logo-footer{
+            grid-area:logo;
+            display:flex;
+            align-items: center;
+            position:relative;
+            top:20px;
+            a{
+                img{
+                    width:auto;
+                    height:120px;
+                    @media all and (max-width:483px){
+                            width:auto;
+                            height:82px;
+
+                    }
+                    @media all and (min-width:484px) and (max-width:1050px){
+                            width:auto;
+                            height:90px;
+                    }
+                }
+            }
+        }
+        .titulo-menu{
+            grid-area:titulo-menu;
+            color:$white;
+            text-transform: uppercase;
+            @include display-center-end(flex,end,center);
+            h3{
+                font-size:22px;
+                font-family: $font-esteban;
+                position:relative;
+                right:13px;
+                top:2px;
+                @media all and (max-width:483px){
+                        top:5px;
+                        right:13px;
+                }
+            }
+        }
+        .navegador-footer-lista{
+            grid-area:menu;
+            font-family: $font-roboto;
+            @include display-center-end(flex,center,center);
+            flex-direction: column;
+            position:relative;
+            right:30px;
+            top:5px;
+            li{
+                text-decoration: none;
+                display:flex;
+                a{
+                    text-decoration: none;
+                    list-style: none;
+                    color:$white;
+                    font-size:17px;
+                    &:hover{
+                        transition:1.5s;
+                        color:gray;
+                    }
+                    @media all and (max-width:483px){
+                            font-size: 15px;
+                    }
+                    @media all and (min-width:484px) and (max-width:1050px){
+                            font-size: 17px;
+                    }
+                }
+            }
+        }
+        .redes-sociales{
+            grid-area:redes-sociales;
+            @include display-center-end(flex,center,center);
+            position:relative;
+            top:20px;
+            a{
+                img{
+                    width:80px;
+                    height:55px;
+                    padding-left:25px;
+                    &:hover{
+                        transition: 1.5s;
+                        transform: scale(1.10);
+                    }
+                    @media all and (max-width:483px){
+                            width:70px;
+                            height:48px;
+                    }
+                    @media all and (min-width:484px) and (max-width:1050px){
+                            width:70px;
+                            height:48px;
+                    }
+                }
+            }
+            @media all and (max-width:483px){
+                    flex-direction:column;
+            }
+            @media all and (min-width:484px) and (max-width:1050px){
+                    flex-direction:column;
+            }
+        }
+        .copyright{
+            grid-area:copyright;
+            @include display-center-end(flex,center,center);
+            p{
+                color:$white;
+                font-size:15px;
+                font-family: sans-serif;
+            }
+            @media all and (max-width:483px){
+                    position:relative;
+                    top:12px;
+            }
+            @media all and (min-width:484px) and (max-width:1050px){
+                    position:relative;
+                    top:12px;
+            }
+        }
+    }
+    @media all and (max-width:483px){
+            height: 230px;
+    }
+    @media all and (min-width:484px) and (max-width:1050px){
+            height: 230px;
+    }
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+
+
+
+
+    
+
+       
+
+        
+
+
+    
+
+    
+
+    

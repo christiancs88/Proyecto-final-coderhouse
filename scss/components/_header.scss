@@ -1,0 +1,37 @@
+
+
+@import '../general/variables';
+@import '../general/extends';
+@import '../general/mixins';
+
+/*--------------------CSS de header------------------------*/
+
+
+.seccion-encabezado {
+    grid-area: encabezado;
+    width: 100%;
+    background-color: $dark;
+    position: sticky;
+    top:0;
+    z-index: 2; 
+    nav{ 
+        div{
+            .logo{
+                .logo{
+                    width:auto;
+                    height:120px;
+                    animation: aparicion 1.7s;
+                }
+            }
+                
+            .navegador-lista{
+                color:$white;
+                font-size:17px;
+                animation: aparicion 1.7s;
+                font-family: $font-roboto;
+            }
+        }
+       
+    }
+}
+        

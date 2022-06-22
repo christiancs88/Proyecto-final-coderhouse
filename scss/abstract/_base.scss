@@ -1,0 +1,14 @@
+@import '../general/variables';
+
+
+/*-----------------------CSS grid layout-------------------*/
+.contenedor-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:3fr;
+    grid-template-areas:
+        "encabezado"
+        "main"
+        "footer";
+}
+

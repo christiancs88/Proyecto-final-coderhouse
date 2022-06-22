@@ -1,0 +1,39 @@
+/*primera seccion*/
+
+%extend-primera-seccion{
+    
+    height:80vh;
+    width: 100%;
+
+}
+
+/*titulo-primera-seccion*/
+
+%titulo-seccion-uno{
+    color:$white;
+    text-shadow: $blue-shadow 1px 3px;
+    font-size:60px;
+    animation: aparicion 0.75s;
+}
+
+/*productos*/
+
+%productos-titulo{
+    color:$white;
+    text-shadow: $dark 1px 3px;    
+    text-align:left;
+    font-family: $font-roboto;
+    font-size:20px;
+    padding:0px 20px;
+}
+
+%productos-parrafo{
+    color:$white;
+    text-shadow: $dark 1px 3px;    
+    text-align:justify;
+    font-family: $font-roboto;
+    font-size:20px;
+    padding:0px 20px;
+    position: relative;
+    top:10px;
+}

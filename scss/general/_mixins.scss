@@ -1,0 +1,34 @@
+/* Mixin display center */
+
+@mixin display-center-end($display,$align,$justify){
+    display:$display;
+    align-items:$align;
+    justify-content:$justify;
+}
+
+
+
+/* Mixins display contenedor-nosotros */
+
+@mixin display-nosotros($display,$justify){
+    display:$display;
+    justify-content:$justify;
+}
+
+/* Mixins general */
+
+@mixin display-general($display,$direction,$justify){
+    display:$display;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+
+/* Mixins display productos */
+
+@mixin contenedor-productos($display,$justify,$wrap){
+    display:$display;
+    justify-content:$justify;
+    flex-wrap:$wrap;
+}
+

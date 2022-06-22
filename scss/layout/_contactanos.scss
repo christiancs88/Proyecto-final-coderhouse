@@ -1,0 +1,162 @@
+
+.main{
+    grid-area:main;
+    .primera-seccion-contacto{
+        background:$black-bg-gradient, url('../Imagenes/Imagenes_contactanos_1.jpg');
+        background-size:cover;
+        background-position:center ;
+        background-attachment:fixed ;
+        background-repeat: no-repeat;
+        @extend %extend-primera-seccion;
+        @include display-center-end(flex,end,end);
+        @media all and (max-width:483px){
+                justify-content: center;
+                align-items: center;
+         }
+        h1{
+            @extend %titulo-seccion-uno;
+            text-align: right;
+            position:relative;
+            right:20px;
+            bottom:40px;
+            font-family: $font-esteban;
+            @media all and (max-width:483px){
+                    font-size:40px;
+                    text-align: center;
+                    position:relative;
+                    right:0px;
+                    bottom:0px;
+             }
+        }
+    }
+    .segunda-seccion-contacto{
+        background-color: $dark-gray;
+        width:100%;
+      
+        h2{
+            color:$white;
+            font-family: $font-esteban;
+            padding-top:150px;
+            font-size:35px;
+            text-align: center;
+            @media all and (max-width:483px){
+                    padding:100px 10px 0px 10px;
+                    font-size:30px;
+                    text-align: center;
+             }
+        }
+        .redes-sociales-contacto{
+            @include display-center-end(flex,center,space-around);
+            height:300px;
+            a{
+                img{
+                    width:120px;
+                    height:auto;
+                    position:relative;
+                    top:80px;
+                    &:hover{
+                        transition:1.5s;
+                        transform: scale(1.10);
+                    }
+                    @media all and (max-width:483px){
+                            width:80px;
+                            height:auto;
+                            position:relative;
+                            top:80px;
+                     }
+                }
+            }
+        }
+    }
+    .tercera-seccion-contacto{
+        background-color: $dark-gray;
+        width:100%;
+        font-family: $font-esteban;
+        h2{
+            color:$white;
+            font-family: 'Esteban', serif;
+            padding-top:150px;
+            font-size:35px;
+            text-align: center;
+            @media all and (max-width:483px){
+                    padding:100px 10px 0px 10px;
+                    font-size:30px;
+                    text-align: center;
+             }
+        }
+        .contenedor-formulario{
+            h3{
+                text-align:center;
+                color:$white;
+                font-size:25px;
+                text-transform: uppercase;
+                padding-top:50px;
+                @media all and (max-width:483px){
+                        font-size: 20px;
+                }
+            }
+            .formulario{
+                padding:80px 0px;
+                display:flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            
+                .formulario-datos{
+                    padding-right:20px;
+                    @media all and (max-width:483px){
+                            padding-right: 0px;
+                    }
+                    @media all and (min-width:484px) and (max-width:1050px){
+                            padding-right: 0px;
+                    }
+                    
+                    input{
+                        width:300px;
+                        height:25px;
+                        margin-bottom:53px;
+                    }
+                }
+                .formulario-mensaje{
+                    display:flex;
+                    flex-direction:column;
+                    textarea{
+                        width:480px;
+                        height:150px;
+                        margin-bottom:5px;
+                        @media all and (max-width:483px){
+                                width:330px;
+                        }
+                    }
+                    .boton-enviar{
+                        width:480px;
+                        height:25px;
+                        background-color: $blue;
+                        color:$white;
+                        border-radius: 2px;
+                        border:$blue;
+                        &:hover{
+                            transition:1.5s;
+                            background-color:$blue-two;
+                            color:$gray;
+                        }
+                        @media all and (max-width:483px){
+                                width:330px;
+                            
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+ 
+
+
+
+

@@ -1,0 +1,303 @@
+.main{
+    grid-area:main;
+    .primera-seccion-productos{
+        background:$black-bg-gradient, url('../Imagenes/Imagen_productos_1.jpg');
+        background-size:cover;
+        background-position:center ;
+        background-attachment:fixed ;
+        background-repeat: no-repeat;
+        @extend %extend-primera-seccion;
+        @include display-general(flex,column,center);
+        font-family: $font-esteban;
+        h1{
+            @extend %titulo-seccion-uno;
+            text-align: left;
+            position: relative;
+            bottom:20px;
+            padding:0px 40px;
+            @media all and (max-width:483px){
+                    font-size:35px;
+                    text-align: center;
+             }
+        }
+        p{
+            color:$white;
+            text-shadow: $blue-shadow 1px 3px;
+            font-size:30px;
+            text-align: justify;
+            animation: aparicion 0.75s;
+            padding:0px 40px;
+            @media all and (max-width:483px){
+                    font-size:20px;
+                    text-align: justify;
+             }
+        }
+        @media all and (max-width:483px){
+            .primera-seccion-productos{
+                padding:0px 10px;
+                
+            }
+         }
+    }
+    .segunda-seccion-productos{
+        background-color: $dark-gray-two;
+        .contenedor-productos-tienda{
+            h2{
+                background-color: $dark;
+                color:$white;
+                text-align:center;
+                font-family: $font-roboto;
+                font-size:40px;
+                text-transform: uppercase;
+                padding:10px 0px;
+                @media all and (max-width:483px){
+                        font-size: 30px;
+                 }
+            }
+            .productos-tienda{
+                @include contenedor-productos(flex,space-around,wrap);
+                padding:20px 0px;
+                .productos-uno{
+                    background:$gray-bg-gradient, url('../Imagenes/Liquida_1.png');
+                    background-size:cover;
+                    background-position:center ;
+                    background-repeat: no-repeat;
+                    width:398px;
+                    height:400px;
+                    @include display-general(flex,column,center);
+                    margin-bottom:10px;
+                    @media all and (max-width:483px){
+                            width:96%;
+                            margin-bottom:15px;
+                     }
+                    
+                    .productos-titulo{
+                        @extend %productos-titulo;
+                        @media all and (max-width:483px){
+                                font-size: 17px ;
+                         }
+                    }
+                    .productos-parrafo{
+                        @extend %productos-parrafo;
+                        @media all and (max-width:483px){
+                                font-size: 17px;
+                         }
+                        
+                    }
+                }
+                .productos-dos{
+                    background:$gray-bg-gradient, url('../Imagenes/Liquida_2.png');
+                    background-size:cover;
+                    background-position:center ;
+                    background-repeat: no-repeat;
+                    width:398px;
+                    height:400px;
+                    @include display-general(flex,column,center);
+                    margin-bottom:10px;
+                    @media all and (max-width:483px){
+                        width:96%;
+                        margin-bottom:15px;
+                 }
+                    .productos-titulo{
+                        @extend %productos-titulo;
+                        @media all and (max-width:483px){
+                            font-size: 17px ;
+                     }
+                    }
+                    .productos-parrafo{
+                        @extend %productos-parrafo;
+                        @media all and (max-width:483px){
+                            font-size: 17px ;
+                     }
+                    }
+                }
+                .productos-tres{
+                    background:$gray-bg-gradient, url('../Imagenes/Liquida_3.png');
+                    background-size:cover;
+                    background-position:center ;
+                    background-repeat: no-repeat;
+                    width:398px;
+                    height:400px;
+                    @include display-general(flex,column,center);
+                    margin-bottom:10px;
+                    @media all and (max-width:483px){
+                        width:96%;
+                        margin-bottom:15px;
+                 }
+                    .productos-titulo{
+                        @extend %productos-titulo;
+                        @media all and (max-width:483px){
+                            font-size: 17px ;
+                     }
+                    }
+                    .productos-parrafo{
+                        @extend %productos-parrafo;
+                        @media all and (max-width:483px){
+                            font-size: 17px ;
+                     }
+                    }
+                }
+                .productos-cuatro{
+                    background:$gray-bg-gradient, url('../Imagenes/Aire_1.jpg');
+                    background-size:cover;
+                    background-position:center ;
+                    background-repeat: no-repeat;
+                    width:398px;
+                    height:400px;
+                    @include display-general(flex,column,center);
+                    margin-bottom:10px;
+                    @media all and (max-width:483px){
+                        width:96%;
+                        margin-bottom:15px;
+                 }
+                    .productos-titulo{
+                        @extend %productos-titulo;
+                        @media all and (max-width:483px){
+                            font-size: 17px ;
+                     }
+                    }
+                    .productos-parrafo{
+                        @extend %productos-parrafo;
+                        @media all and (max-width:483px){
+                            font-size: 17px ;
+                     }
+                    }
+                }
+                .productos-cinco{
+                    background:$gray-bg-gradient, url('../Imagenes/Aire_2.jpg');
+                    background-size:cover;
+                    background-position:center ;
+                    background-repeat: no-repeat;
+                    width:398px;
+                    height:400px;
+                    @include display-general(flex,column,center);
+                    margin-bottom:10px;
+                    @media all and (max-width:483px){
+                        width:96%;
+                        margin-bottom:15px;
+                 }
+                    .productos-titulo{
+                        @extend %productos-titulo;
+                        @media all and (max-width:483px){
+                            font-size: 17px ;
+                     }
+                    }
+                    .productos-parrafo{
+                        @extend %productos-parrafo;
+                        @media all and (max-width:483px){
+                            font-size: 17px ;
+                     }
+                    }
+                }
+                .productos-seis{
+                    background:$gray-bg-gradient, url('../Imagenes/Aire_3.jpg');
+                    background-size:cover;
+                    background-position:center ;
+                    background-repeat: no-repeat;
+                    width:398px;
+                    height:400px;
+                    @include display-general(flex,column,center);
+                    margin-bottom:10px;
+                    @media all and (max-width:483px){
+                        width:96%;
+                        margin-bottom:15px;
+                 }
+                    .productos-titulo{
+                        @extend %productos-titulo;
+                        @media all and (max-width:483px){
+                            font-size: 17px ;
+                     }
+                    }
+                    .productos-parrafo{
+                        @extend %productos-parrafo;
+                        @media all and (max-width:483px){
+                            font-size: 17px ;
+                     }
+                    }
+                }
+                .productos-siete{
+                    background:$gray-bg-gradient, url('../Imagenes/Ventiladores_1.png');
+                    background-size:cover;
+                    background-position:center ;
+                    background-repeat: no-repeat;
+                    width:398px;
+                    height:400px;
+                    @include display-general(flex,column,center);
+                    margin-bottom:10px;
+                    @media all and (max-width:483px){
+                        width:96%;
+                        margin-bottom:15px;
+                 }
+                    .productos-titulo{
+                        @extend %productos-titulo;
+                        @media all and (max-width:483px){
+                            font-size: 17px ;
+                     }
+                    }
+                    .productos-parrafo{
+                        @extend %productos-parrafo;
+                        @media all and (max-width:483px){
+                            font-size: 17px ;
+                     }
+                    }
+                }
+                .productos-ocho{
+                    background:$gray-bg-gradient, url('../Imagenes/Ventiladores_2.jpg');
+                    background-size:cover;
+                    background-position:center ;
+                    background-repeat: no-repeat;
+                    width:398px;
+                    height:400px;
+                    @include display-general(flex,column,center);
+                    margin-bottom:10px;
+                    @media all and (max-width:483px){
+                        width:96%;
+                        margin-bottom:15px;
+                 }
+                    .productos-titulo{
+                        @extend %productos-titulo;
+                        @media all and (max-width:483px){
+                            font-size: 17px ;
+                     }
+                    }
+                    .productos-parrafo{
+                        @extend %productos-parrafo;
+                        @media all and (max-width:483px){
+                            font-size: 17px ;
+                     }
+                    }
+                }
+                .productos-nueve{
+                    background:$gray-bg-gradient, url('../Imagenes/Ventiladores_3.jpg');
+                    background-size:cover;
+                    background-position:center ;
+                    background-repeat: no-repeat;
+                    width:398px;
+                    height:400px;
+                    @include display-general(flex,column,center);
+                    margin-bottom:10px;
+                    @media all and (max-width:483px){
+                        width:96%;
+                        margin-bottom:15px;
+                 }
+                    .productos-titulo{
+                        @extend %productos-titulo;
+                        @media all and (max-width:483px){
+                            font-size: 17px ;
+                     }
+                        
+                    }
+                    .productos-parrafo{
+                        @extend %productos-titulo;
+                        @media all and (max-width:483px){
+                            font-size: 17px;
+                         }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+

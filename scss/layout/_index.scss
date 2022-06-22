@@ -1,0 +1,187 @@
+
+.main{
+    grid-area:main;
+    .primera-seccion{
+        background:$black-bg-gradient, url('../Imagenes/imagen_index_1.jpg');
+        background-size:cover;
+        background-position:center ;
+        background-attachment:fixed ;
+        background-repeat: no-repeat;
+        @extend %extend-primera-seccion;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        text-align: center;
+        font-family: $font-esteban;
+        h1{
+            @extend %titulo-seccion-uno;
+            @media all and (max-width:483px) {
+                font-size: 40px;
+                padding:0px 20px; 
+            }
+            @media all and (min-width:484px) and (max-width:1050px) {
+                    font-size: 40px;
+                    padding:0px 20px;
+
+            }
+        }
+      
+    }
+    .segunda-seccion{
+        width:100%;
+        background-color: $dark;
+        h2{
+            color:$white;
+            font-size:50px;
+            font-family: $font-esteban;
+            padding:10px 0px;
+            text-align: center;
+            @media all and (max-width:483px){
+                    font-size: 30px;
+            }
+            @media all and (min-width:484px) and (max-width:1050px){
+                    font-size: 35px;
+            }
+        }
+        div{
+            div{
+                div{
+                    .carrusel-imagen{
+                        height:420px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+    }
+    .tercera-seccion{
+        background-color: $dark;
+        width:100%;
+        h2{
+            color:$white;
+            text-align:center;
+            font-family: $font-roboto;
+            font-size:40px;
+            text-transform: uppercase;
+            padding:10px 0px;
+            @media all and (max-width:483px){
+                    font-size: 30px;
+            }
+            @media all and (min-width:484px) and (max-width:1050px){
+                    font-size: 35px;
+            }
+        }
+        .contenedor-productos{
+            background-color:$dark-gray;
+            width:100%;
+            padding-top:45px;
+            padding-bottom:45px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            .producto-1{
+                background: url('../Imagenes/imagen_index_2.jpg');
+                background-size:cover;
+                background-position:center;
+                background-repeat: no-repeat;
+                height:600px;
+                width:95%;
+                @include display-center-end(flex,center,center);
+                margin-bottom:45px;
+                text-align: center;
+                h3{
+                    color:$white;
+                    text-shadow: $blue-shadow 1px 3px;
+                    font-size:60px;
+                    @media all and (max-width:483px){
+                            font-size: 35px;
+                    }
+                    @media all and (min-width:484px) and (max-width:1050px){
+                            font-size: 45px;
+                    }
+                    
+                }
+            }
+            .producto-2{
+                background: url('../Imagenes/imagen_index_3.jpg');
+                background-size:cover;
+                background-position:center;
+                background-repeat: no-repeat;
+                height:600px;
+                width:95%;
+                @include display-center-end(flex,center,center);
+                margin-bottom:45px;
+                text-align: center;
+                h3{
+                    color:$white;
+                    text-shadow: $blue-shadow 1px 3px;
+                    font-size:60px;  
+                    @media all and (max-width:483px){
+                            font-size: 35px;
+                    }
+                    @media all and (min-width:484px) and (max-width:1050px){
+                            font-size: 45px;
+                    }
+                }
+            }
+            .producto-3{
+                background: url('../Imagenes/imagen_index_4.JPG');
+                background-size:cover;
+                background-position:center;
+                background-repeat: no-repeat;
+                height:600px;
+                width:95%;
+                @include display-center-end(flex,center,center);
+                text-align: center;
+                h3{
+                    color:$white;
+                    text-shadow: $blue-shadow 1px 3px;
+                    font-size:60px;
+                    @media all and (max-width:483px){
+                            font-size: 35px;
+                    }
+                    @media all and (min-width:484px) and (max-width:1050px){
+                            font-size: 45px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+      
+
+        
+    
+
+        
+
+    
+
+    
+
+    
+  
+       
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    
