@@ -112,7 +112,9 @@
         }
         .copyright{
             grid-area:copyright;
-            @include display-center-end(flex,center,center);
+            display:flex;
+            justify-content: center;
+            text-align:center;
             p{
                 color:$white;
                 font-size:15px;
