@@ -89,11 +89,11 @@
   .seccion-encabezado nav div .logo .logo {
     width: auto;
     height: 120px;
-    animation: aparicion 1.7s; }
+    animation: aparicion 1s; }
   .seccion-encabezado nav div .navegador-lista {
     color: white;
     font-size: 17px;
-    animation: aparicion 1.7s;
+    animation: aparicion 1s;
     font-family: "Roboto", sans-serif; }
 
 .main {
